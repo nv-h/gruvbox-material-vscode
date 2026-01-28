@@ -1,13 +1,13 @@
 {
-  "name": "gruvbox-material",
+  "name": "gruvbox-material-custom",
   "displayName": "Gruvbox Material",
   "description": "Gruvbox with Material Palette",
   "author": "sainnhe (https://github.com/sainnhe)",
-  "publisher": "sainnhe",
+  "publisher": "saido",
   "version": "6.5.2",
-  "homepage": "https://github.com/sainnhe/gruvbox-material-vscode",
+  "homepage": "https://github.com/nv-h/gruvbox-material-vscode",
   "bugs": {
-    "url": "https://github.com/sainnhe/gruvbox-material-vscode/issues"
+    "url": "https://github.com/nv-h/gruvbox-material-vscode/issues"
   },
   "icon": "icon.png",
   "license": "MIT",
@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sainnhe/gruvbox-material-vscode.git"
+    "url": "https://github.com/nv-h/gruvbox-material-vscode.git"
   },
   "extensionKind": [
     "ui",

@@ -48,9 +48,9 @@
         <img src="https://img.shields.io/badge/vscode-marketplace-blue" /></a>
     <a href="https://open-vsx.org/extension/sainnhe/gruvbox-material" alt="Registry">
         <img src="https://img.shields.io/badge/open--vsx-registry-green" /></a>
-    <a href="https://github.com/sainnhe/gruvbox-material-vscode" alt="Repository">
+    <a href="https://github.com/nv-h/gruvbox-material-vscode" alt="Repository">
         <img src="https://img.shields.io/badge/github-repository-blueviolet" /></a>
-    <a href="https://github.com/sainnhe/gruvbox-material-vscode/issues" alt="Issues">
+    <a href="https://github.com/nv-h/gruvbox-material-vscode/issues" alt="Issues">
         <img src="https://img.shields.io/badge/issue-feedback-red" /></a>
     <a href="https://vscode.dev/theme/sainnhe.gruvbox-material" alt="Preview">
         <img src="https://img.shields.io/badge/preview-vscode.dev-yellow" /></a>
@@ -182,7 +182,7 @@ See this [wiki page](https://github.com/sainnhe/gruvbox-material/wiki/Related-Pr
 
 ## Contributing
 
-See [CONTRIBUTING.md](https://github.com/sainnhe/gruvbox-material-vscode/blob/master/CONTRIBUTING.md).
+See [CONTRIBUTING.md](https://github.com/nv-h/gruvbox-material-vscode/blob/master/CONTRIBUTING.md).
 
 ## Credits
 
@@ -211,4 +211,4 @@ See [CONTRIBUTING.md](https://github.com/sainnhe/gruvbox-material-vscode/blob/ma
 
 ## License
 
-[MIT License](https://github.com/sainnhe/gruvbox-material-vscode/blob/master/LICENSE)
+[MIT License](https://github.com/nv-h/gruvbox-material-vscode/blob/master/LICENSE)
