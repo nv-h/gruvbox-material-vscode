@@ -17,7 +17,7 @@ export function activate() {
       utils.generate(
         join(__dirname, "..", "themes", "gruvbox-material-dark.json"),
         join(__dirname, "..", "themes", "gruvbox-material-light.json"),
-        utils.getThemeData(utils.getConfiguration())
+        utils.getThemeData(utils.getConfiguration()),
       );
     });
   });
@@ -30,7 +30,7 @@ export function activate() {
     utils.generate(
       join(__dirname, "..", "themes", "gruvbox-material-dark.json"),
       join(__dirname, "..", "themes", "gruvbox-material-light.json"),
-      utils.getThemeData(utils.getConfiguration())
+      utils.getThemeData(utils.getConfiguration()),
     );
   }
 }

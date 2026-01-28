@@ -9,7 +9,7 @@ import { Palette, Configuration } from "../interface";
 export function flatWorkbench(
   palette: Palette,
   configuration: Configuration,
-  variant: string
+  variant: string,
 ) {
   let selectionBg: string;
   let editorSelectionBg: string;

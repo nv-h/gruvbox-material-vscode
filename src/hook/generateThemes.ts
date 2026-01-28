@@ -16,7 +16,7 @@ class Utils {
     // {{{
     return new Promise((resolve, reject) => {
       fs.writeFile(path, JSON.stringify(data, null, 2), (err) =>
-        err ? reject(err) : resolve("Success")
+        err ? reject(err) : resolve("Success"),
       );
     });
   } // }}}
@@ -70,7 +70,7 @@ const configuration: Configuration = {
 utils.generate(
   join(__dirname, "..", "..", "themes", "gruvbox-material-dark.json"),
   join(__dirname, "..", "..", "themes", "gruvbox-material-light.json"),
-  utils.getThemeData(configuration)
+  utils.getThemeData(configuration),
 );
 
 // vim: fdm=marker fmr={{{,}}}:

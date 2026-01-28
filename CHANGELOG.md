@@ -2,6 +2,13 @@
 
 All notable changes to the "gruvbox-material" extension will be documented in this file.
 
+## 6.5.3
+
+- Bump `engines.vscode`.
+- Update dev tooling dependencies.
+- Migrate ESLint config to flat config (`eslint.config.js`).
+- Address `npm audit` issues.
+
 ## 6.5.2
 
 - Change `activationEvents`.

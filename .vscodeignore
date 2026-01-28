@@ -10,4 +10,5 @@ CONTRIBUTING.md
 .husky
 .eslintrc.js
 .eslintignore
+eslint.config.js
 .vscode-test-web

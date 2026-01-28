@@ -8,5 +8,7 @@ node_modules/
 dist/
 *.vsix
 .flag
+
+!eslint.config.js
 icon.png
 .vscode-test-web

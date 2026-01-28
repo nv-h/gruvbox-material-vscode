@@ -16,7 +16,7 @@ export default class Utils {
   detectConfigChanges(
     // {{{
     event: ConfigurationChangeEvent,
-    onConfigChange: () => void
+    onConfigChange: () => void,
   ): void {
     if (event.affectsConfiguration("gruvboxMaterial")) {
       onConfigChange();
@@ -41,7 +41,7 @@ export default class Utils {
       italicKeywords: workspaceConfiguration.get<boolean>("italicKeywords"),
       italicComments: workspaceConfiguration.get<boolean>("italicComments"),
       diagnosticTextBackgroundOpacity: workspaceConfiguration.get<string>(
-        "diagnosticTextBackgroundOpacity"
+        "diagnosticTextBackgroundOpacity",
       ),
       highContrast: workspaceConfiguration.get<boolean>("highContrast"),
     };
@@ -101,7 +101,7 @@ export default class Utils {
     // {{{
     return new Promise((resolve, reject) => {
       fs.writeFile(path, JSON.stringify(data, null, 2), (err) =>
-        err ? reject(err) : resolve("Success")
+        err ? reject(err) : resolve("Success"),
       );
     });
   } // }}}

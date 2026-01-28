@@ -10,7 +10,7 @@ export function activate() {
   workspace.onDidChangeConfiguration((event) => {
     if (event.affectsConfiguration("gruvboxMaterial")) {
       window.showInformationMessage(
-        "Configuration options are currently not available in vscode web."
+        "Configuration options are currently not available in vscode web.",
       );
     }
   });

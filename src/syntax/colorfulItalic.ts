@@ -8,7 +8,7 @@ import { Palette } from "../interface";
 
 export function getColorfulItalicSyntax(
   palette: Palette,
-  italicComments: boolean
+  italicComments: boolean,
 ) {
   const syntax = [
     // Syntax{{{
