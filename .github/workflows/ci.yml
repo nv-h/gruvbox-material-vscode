@@ -23,13 +23,13 @@ jobs:
       NODE_ENV: test
 
     steps:
+      - name: Check out ref
+        uses: actions/checkout@v4
+
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-
-      - name: Check out ref
-        uses: actions/checkout@v2
 
       - name: Install node modules
         run: npm ci
@@ -39,3 +39,9 @@ jobs:
 
       - name: Package
         run: npm run package
+
+      - name: Upload VSIX artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: gruvbox-material-${{ github.sha }}.vsix
+          path: "*.vsix"
