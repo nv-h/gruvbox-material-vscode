@@ -4,10 +4,10 @@ All notable changes to the "gruvbox-material" extension will be documented in th
 
 ## Unreleased
 
-- Add colors for debug inline values (`editor.inlineValuesBackground`, `editor.inlineValuesForeground`). [#265](https://github.com/sainnhe/gruvbox-material-vscode/issues/265) — [Preview](docs/previews/inline-values.html)
-- Add semantic token colors for Rust `enum` and `enumMember`. [PR #270](https://github.com/sainnhe/gruvbox-material-vscode/pull/270)
-- Refactor `generateThemes.ts`: replace `Utils` class with exported functions; add `require.main` guard for testability.
-- Add `test` npm script using Node.js built-in test runner.
+- Add colors for debug inline values (`editor.inlineValuesBackground`, `editor.inlineValuesForeground`). [#265](https://github.com/sainnhe/gruvbox-material-vscode/issues/265) — [Preview](docs/previews/inline-values.html) — nv-h PR [#1](https://github.com/nv-h/gruvbox-material-vscode/pull/1)
+- Add semantic token colors for Rust `enum` and `enumMember`. [Upstream PR #270](https://github.com/sainnhe/gruvbox-material-vscode/pull/270) — nv-h PR [#1](https://github.com/nv-h/gruvbox-material-vscode/pull/1)
+- Refactor `generateThemes.ts`: replace `Utils` class with exported functions; add `require.main` guard for testability. nv-h PR [#1](https://github.com/nv-h/gruvbox-material-vscode/pull/1)
+- Add `test` npm script using Node.js built-in test runner. nv-h PR [#1](https://github.com/nv-h/gruvbox-material-vscode/pull/1)
 
 ## 6.5.4
 
