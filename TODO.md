@@ -12,7 +12,7 @@ Issues and PRs from the original repository that could be addressed in this fork
 
 #### PR #270: Add semantic colors for Rust enums
 
-- [ ] Add semantic token colors for Rust enums to distinguish enum members from variables
+- [x] Add semantic token colors for Rust enums to distinguish enum members from variables
 - **Upstream**: https://github.com/sainnhe/gruvbox-material-vscode/pull/270
 - **Difficulty**: Easy (2 lines change)
 
@@ -42,14 +42,16 @@ Issues and PRs from the original repository that could be addressed in this fork
 
 #### Issue #265: Add highlights for debug inline variables
 
-- [ ] Add colors for `editor.inlineValuesBackground` and `editor.inlineValuesForeground`
-- [ ] Make inline debug values subtle but distinguishable from code
+- [x] Add colors for `editor.inlineValuesBackground` and `editor.inlineValuesForeground`
+- [x] Make inline debug values subtle but distinguishable from code
+- **Preview**: [docs/previews/inline-values.html](docs/previews/inline-values.html)
 - **Upstream**: https://github.com/sainnhe/gruvbox-material-vscode/issues/265
 - **Difficulty**: Easy
 
 #### Issue #267: Decrease active indent guide opacity
 
 - [ ] Reduce opacity of `editorIndentGuide.activeBackground1-6` to ~50%
+- [ ] On hold: cannot reproduce the issue; deferring until reproduction steps are established
 - **Upstream**: https://github.com/sainnhe/gruvbox-material-vscode/issues/267
 - **Difficulty**: Easy
 

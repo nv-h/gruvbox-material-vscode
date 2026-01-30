@@ -365,6 +365,8 @@ export function highContrastWorkbench(
     "editorWhitespace.foreground": `${palette.bg5}`,
     "editorIndentGuide.background": `${palette.grey2}20`,
     "editorIndentGuide.activeBackground": `${palette.grey2}50`,
+    "editor.inlineValuesBackground": `${palette.yellow}18`,
+    "editor.inlineValuesForeground": `${palette.grey1}`,
     "editorInlayHint.background": `${palette.bg}00`,
     "editorInlayHint.foreground": `${palette.bg9}`,
     "editorInlayHint.typeBackground": `${palette.bg}00`,

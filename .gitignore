@@ -10,5 +10,6 @@ dist/
 .flag
 
 !eslint.config.js
+!test/**/*.js
 icon.png
 .vscode-test-web

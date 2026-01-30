@@ -231,6 +231,7 @@
     "compile": "npm run clean && npm run compile:ts && npm run compile:themes && npm run compile:icon",
     "package": "vsce package && git checkout -- themes",
     "lint": "eslint . --ext .ts",
+    "test": "npm run compile:ts && node --test test/*.test.js",
     "browser": "vscode-test-web --browserType=chromium --extensionDevelopmentPath=. .",
     "prepare": "husky install"
   },

@@ -2,6 +2,13 @@
 
 All notable changes to the "gruvbox-material" extension will be documented in this file.
 
+## Unreleased
+
+- Add colors for debug inline values (`editor.inlineValuesBackground`, `editor.inlineValuesForeground`). [#265](https://github.com/sainnhe/gruvbox-material-vscode/issues/265) — [Preview](docs/previews/inline-values.html)
+- Add semantic token colors for Rust `enum` and `enumMember`. [PR #270](https://github.com/sainnhe/gruvbox-material-vscode/pull/270)
+- Refactor `generateThemes.ts`: replace `Utils` class with exported functions; add `require.main` guard for testability.
+- Add `test` npm script using Node.js built-in test runner.
+
 ## 6.5.4
 
 - Clarify this extension as an nv-h fork (Marketplace name/description/README).
