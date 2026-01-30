@@ -1,10 +1,10 @@
 {
   "name": "gruvbox-material-nv-h",
-  "displayName": "Gruvbox Material (nv-h)",
-  "description": "Gruvbox with Material Palette",
-  "author": "sainnhe (https://github.com/sainnhe)",
+  "displayName": "Gruvbox Material (nv-h fork)",
+  "description": "Unofficial fork of Gruvbox Material for VS Code (nv-h): actively maintained with fixes and extra options.",
+  "author": "nv-h (unofficial fork; upstream by sainnhe)",
   "publisher": "nv-h",
-  "version": "6.5.3",
+  "version": "6.5.4",
   "homepage": "https://github.com/nv-h/gruvbox-material-vscode",
   "bugs": {
     "url": "https://github.com/nv-h/gruvbox-material-vscode/issues"
@@ -44,18 +44,18 @@
   "contributes": {
     "themes": [
       {
-        "label": "Gruvbox Material Dark",
+        "label": "Gruvbox Material Dark (nv-h)",
         "uiTheme": "vs-dark",
         "path": "./themes/gruvbox-material-dark.json"
       },
       {
-        "label": "Gruvbox Material Light",
+        "label": "Gruvbox Material Light (nv-h)",
         "uiTheme": "vs",
         "path": "./themes/gruvbox-material-light.json"
       }
     ],
     "configuration": {
-      "title": "Gruvbox Material",
+      "title": "Gruvbox Material (nv-h fork)",
       "properties": {
         "gruvboxMaterial.darkContrast": {
           "type": "string",

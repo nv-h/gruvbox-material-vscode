@@ -1,12 +1,13 @@
 > [!NOTE]
-> This is a fork of [sainnhe/gruvbox-material-vscode](https://github.com/sainnhe/gruvbox-material-vscode), which is no longer maintained.
+> This is an unofficial fork of [sainnhe/gruvbox-material-vscode](https://github.com/sainnhe/gruvbox-material-vscode).
 > This fork is actively maintained with bug fixes and new features.
+> This is an unofficial community fork and is not affiliated with the original publisher/listing.
 > See [TODO.md](TODO.md) for planned improvements.
 
 ---
 
 <h1 align="center">
-𝐆𝐫𝐮𝐯𝐛𝐨𝐱 𝐌𝐚𝐭𝐞𝐫𝐢𝐚𝐥
+𝐆𝐫𝐮𝐯𝐛𝐨𝐱 𝐌𝐚𝐭𝐞𝐫𝐢𝐚𝐥 (nv-h fork)
 </h1>
 
 <h2 align="center">
@@ -46,19 +47,20 @@
 ![light-soft-high-contrast](https://gitlab.com/sainnhe/img/-/raw/master/gm-vsc-light-soft-high-contrast.png)
 
 <p align="center">
-    <a href="https://marketplace.visualstudio.com/items?itemName=sainnhe.gruvbox-material" alt="Marketplace">
+    <a href="https://marketplace.visualstudio.com/items?itemName=nv-h.gruvbox-material-nv-h" alt="Marketplace">
         <img src="https://img.shields.io/badge/vscode-marketplace-blue" /></a>
-    <a href="https://open-vsx.org/extension/sainnhe/gruvbox-material" alt="Registry">
+    <a href="https://open-vsx.org/extension/nv-h/gruvbox-material-nv-h" alt="Registry">
         <img src="https://img.shields.io/badge/open--vsx-registry-green" /></a>
     <a href="https://github.com/nv-h/gruvbox-material-vscode" alt="Repository">
         <img src="https://img.shields.io/badge/github-repository-blueviolet" /></a>
     <a href="https://github.com/nv-h/gruvbox-material-vscode/issues" alt="Issues">
         <img src="https://img.shields.io/badge/issue-feedback-red" /></a>
-    <a href="https://vscode.dev/theme/sainnhe.gruvbox-material" alt="Preview">
+    <a href="https://vscode.dev/theme/nv-h.gruvbox-material-nv-h" alt="Preview">
         <img src="https://img.shields.io/badge/preview-vscode.dev-yellow" /></a>
 </p>
 
-This color scheme is a port of [Gruvbox Material](https://github.com/sainnhe/gruvbox-material) for Visual Studio Code and its forks.
+This extension is an unofficial fork of [Gruvbox Material](https://github.com/sainnhe/gruvbox-material) for Visual Studio Code.
+It aims to stay compatible with upstream while continuing maintenance under nv-h.
 
 > Gruvbox Material is a modified version of [Gruvbox](https://github.com/morhetz/gruvbox), the contrast is adjusted to be softer in order to protect developers' eyes.
 
@@ -152,7 +154,7 @@ The following file types and syntax extensions are basically optimized, but ther
 
 1. Click the gear button in the lower left corner.
 2. Click `Color Theme`.
-3. Select Gruvbox Material in the list.
+3. Select `Gruvbox Material Dark (nv-h)` or `Gruvbox Material Light (nv-h)` in the list.
 
 ## Customization
 
@@ -160,7 +162,7 @@ There are some configuration options available in this theme, you can customize 
 
 1. Click the gear button in the lower left corner.
 2. Click `Settings`.
-3. Select `Gruvbox Material` and change the settings.
+3. Select `Gruvbox Material (nv-h fork)` and change the settings.
 
 ## FAQ
 
@@ -190,7 +192,7 @@ See [CONTRIBUTING.md](https://github.com/nv-h/gruvbox-material-vscode/blob/maste
 
 - The color palette is based on [gruvbox](https://github.com/morhetz/gruvbox) by [@morhetz](https://github.com/morhetz)
 - The color palette is adjusted by [@sainnhe](https://github.com/sainnhe)
-- The icon is designed by [@GulajavaMinistudio](https://github.com/GulajavaMinistudio)
+- Fork icon for this extension is maintained by [nv-h](https://github.com/nv-h)
 - The material workbench style is designed by [@sainnhe](https://github.com/sainnhe)
 - The flat workbench style is designed by [@sainnhe](https://github.com/sainnhe)
 - The high contrast workbench style is designed by [@GulajavaMinistudio](https://github.com/GulajavaMinistudio)

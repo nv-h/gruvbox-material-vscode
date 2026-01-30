@@ -2,6 +2,12 @@
 
 All notable changes to the "gruvbox-material" extension will be documented in this file.
 
+## 6.5.4
+
+- Clarify this extension as an nv-h fork (Marketplace name/description/README).
+- Replace icon to avoid confusion with other listings.
+- Differentiate theme labels in the Color Theme picker.
+
 ## 6.5.3
 
 - Bump `engines.vscode`.
