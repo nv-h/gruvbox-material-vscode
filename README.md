@@ -211,15 +211,12 @@ See [CONTRIBUTING.md](https://github.com/nv-h/gruvbox-material-vscode/blob/maste
 
 ### Current Maintainer (Fork)
 
-| [![nv-h](https://avatars.githubusercontent.com/u/13892609?s=70&v=4)](https://github.com/nv-h) |
-| --------------------------------------------------------------------------------------------- |
-| [nv-h](https://github.com/nv-h)                                                               |
+- [nv-h (H.Saido)](https://github.com/nv-h)
 
 ### Original Maintainers
 
-| [![Sainnhe Park](https://avatars1.githubusercontent.com/u/37491630?s=70&u=14e72916dcf467f393c532536387ec72a23747ec&v=4)](https://github.com/sainnhe) | [![Zolkin Andrew](https://avatars2.githubusercontent.com/u/58516282?s=70&u=87954a1cdbb355162ecbd9826b6b85525f498240&v=4)](https://github.com/Z4RX) |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Sainnhe Park](https://github.com/sainnhe)                                                                                                           | [Zolkin Andrew](https://github.com/Z4RX)                                                                                                           |
+- [Sainnhe Park](https://github.com/sainnhe)
+- [Zolkin Andrew](https://github.com/Z4RX)
 
 ## License
 
