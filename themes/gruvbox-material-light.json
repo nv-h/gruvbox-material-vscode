@@ -28,7 +28,9 @@
     "class:python": "#4c7a5d",
     "macro:rust": "#4c7a5d",
     "namespace:rust": "#945e80",
-    "selfKeyword:rust": "#945e80"
+    "selfKeyword:rust": "#945e80",
+    "enum:rust": "#945e80",
+    "enumMember:rust": "#45707a"
   },
   "colors": {
     "foreground": "#7c6f64",
@@ -153,6 +155,8 @@
     "editorWhitespace.foreground": "#e0cfa9",
     "editorIndentGuide.background": "#7c6f6420",
     "editorIndentGuide.activeBackground": "#7c6f6450",
+    "editor.inlineValuesBackground": "#b4710918",
+    "editor.inlineValuesForeground": "#928374",
     "editorInlayHint.background": "#fbf1c700",
     "editorInlayHint.foreground": "#a89984",
     "editorInlayHint.typeBackground": "#fbf1c700",

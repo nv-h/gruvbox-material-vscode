@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Inline Values Color Preview — Gruvbox Material</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', sans-serif; background: #1e1e1e; color: #ccc; padding: 24px; }
+  h1 { font-size: 20px; margin-bottom: 8px; color: #ebdbb2; }
+  h2 { font-size: 16px; margin: 24px 0 8px; color: #a89984; }
+  h3 { font-size: 13px; margin: 16px 0 6px; color: #928374; font-weight: normal; }
+  .note { font-size: 12px; color: #7c6f64; margin-bottom: 24px; }
+  .section { margin-bottom: 32px; }
+  .theme-row { display: flex; gap: 24px; flex-wrap: wrap; }
+  .theme-box { border-radius: 8px; padding: 16px; min-width: 460px; flex: 1; }
+  .dark-box { background: #292828; border: 1px solid #3c3836; }
+  .light-box { background: #fbf1c7; border: 1px solid #ebdbb2; }
+  .editor { font-family: 'Cascadia Code', 'Fira Code', 'JetBrains Mono', 'Consolas', monospace; font-size: 13px; line-height: 1.7; padding: 12px 16px; border-radius: 4px; white-space: pre; overflow-x: auto; }
+  .dark-editor { background: #292828; color: #d4be98; }
+  .light-editor { background: #fbf1c7; color: #654735; }
+
+  /* Dark theme colors */
+  .d-keyword { color: #ea6962; }
+  .d-fn { color: #a9b665; }
+  .d-var { color: #d4be98; }
+  .d-string { color: #a9b665; }
+  .d-number { color: #d8a657; }
+  .d-comment { color: #7c6f64; font-style: italic; }
+  .d-type { color: #d8a657; }
+
+  /* Light theme colors */
+  .l-keyword { color: #c14a4a; }
+  .l-fn { color: #6c782e; }
+  .l-var { color: #654735; }
+  .l-string { color: #6c782e; }
+  .l-number { color: #b47109; }
+  .l-comment { color: #a89984; font-style: italic; }
+  .l-type { color: #b47109; }
+
+  /* Inline values — BEFORE (no styling, VSCode default) */
+  .iv-default-dark {
+    background: rgba(255, 200, 0, 0.16);
+    color: rgba(255, 200, 0, 0.68);
+    font-size: 11px;
+    padding: 1px 6px;
+    border-radius: 3px;
+    margin-left: 12px;
+  }
+  .iv-default-light {
+    background: rgba(255, 200, 0, 0.16);
+    color: rgba(180, 140, 0, 0.68);
+    font-size: 11px;
+    padding: 1px 6px;
+    border-radius: 3px;
+    margin-left: 12px;
+  }
+
+  /* Inline values — AFTER (proposed gruvbox styling) */
+  /* Dark: yellow=#d8a657 @ 18 (hex opacity ~9%), fg=grey1=#928374 */
+  .iv-proposed-dark {
+    background: #d8a65718;
+    color: #928374;
+    font-size: 11px;
+    padding: 1px 6px;
+    border-radius: 3px;
+    margin-left: 12px;
+  }
+  /* Light: yellow=#b47109 @ 18 (hex opacity ~9%), fg=grey1=#928374 */
+  .iv-proposed-light {
+    background: #b4710918;
+    color: #928374;
+    font-size: 11px;
+    padding: 1px 6px;
+    border-radius: 3px;
+    margin-left: 12px;
+  }
+
+  /* Inlay hint reference */
+  .inlay-dark {
+    background: transparent;
+    color: #7c6f64;
+    font-size: 11px;
+    padding: 1px 4px;
+    border-radius: 3px;
+    margin: 0 2px;
+  }
+  .inlay-light {
+    background: transparent;
+    color: #a89984;
+    font-size: 11px;
+    padding: 1px 4px;
+    border-radius: 3px;
+    margin: 0 2px;
+  }
+
+  .swatch-row { display: flex; gap: 12px; align-items: center; margin: 4px 0; font-size: 13px; }
+  .swatch { width: 28px; height: 28px; border-radius: 4px; border: 1px solid #504945; display: inline-block; }
+  .label { font-family: monospace; font-size: 12px; }
+
+  table { border-collapse: collapse; margin: 8px 0; font-size: 13px; }
+  td, th { padding: 4px 12px; border: 1px solid #3c3836; text-align: left; }
+  th { color: #a89984; font-weight: 600; }
+</style>
+</head>
+<body>
+
+<h1>Inline Values Color Preview</h1>
+<p class="note">Issue #265: Add highlights for debug inline variables — "Make inline debug values subtle but distinguishable from code"</p>
+
+<!-- Color reference -->
+<div class="section">
+  <h2>Color Reference</h2>
+  <table>
+    <tr><th>Token</th><th>Dark Hex</th><th>Light Hex</th><th>Dark</th><th>Light</th></tr>
+    <tr>
+      <td><code>palette.yellow</code></td><td>#d8a657</td><td>#b47109</td>
+      <td><span class="swatch" style="background:#d8a657"></span></td>
+      <td><span class="swatch" style="background:#b47109"></span></td>
+    </tr>
+    <tr>
+      <td><code>palette.grey1</code></td><td>#928374</td><td>#928374</td>
+      <td><span class="swatch" style="background:#928374"></span></td>
+      <td><span class="swatch" style="background:#928374"></span></td>
+    </tr>
+    <tr>
+      <td><code>palette.bg9 (inlayHint)</code></td><td>#7c6f64</td><td>#a89984</td>
+      <td><span class="swatch" style="background:#7c6f64"></span></td>
+      <td><span class="swatch" style="background:#a89984"></span></td>
+    </tr>
+  </table>
+</div>
+
+<!-- BEFORE -->
+<div class="section">
+  <h2>BEFORE (VSCode Default — no theme override)</h2>
+  <p class="note">VSCode uses a yellow-tinted default that doesn't match Gruvbox.</p>
+  <div class="theme-row">
+    <div class="theme-box dark-box">
+      <h3>Dark</h3>
+      <div class="editor dark-editor"><span class="d-keyword">fn</span> <span class="d-fn">calculate</span>(<span class="d-var">x</span>: <span class="d-type">i32</span>, <span class="d-var">y</span>: <span class="d-type">i32</span>) -> <span class="d-type">i32</span> {
+    <span class="d-keyword">let</span> <span class="d-var">sum</span> = <span class="d-var">x</span> + <span class="d-var">y</span>;<span class="iv-default-dark">sum = 15</span>
+    <span class="d-keyword">let</span> <span class="d-var">result</span> = <span class="d-var">sum</span> * <span class="d-number">2</span>;<span class="iv-default-dark">result = 30</span>
+    <span class="d-var">result</span>
+}</div>
+    </div>
+    <div class="theme-box light-box">
+      <h3>Light</h3>
+      <div class="editor light-editor"><span class="l-keyword">fn</span> <span class="l-fn">calculate</span>(<span class="l-var">x</span>: <span class="l-type">i32</span>, <span class="l-var">y</span>: <span class="l-type">i32</span>) -> <span class="l-type">i32</span> {
+    <span class="l-keyword">let</span> <span class="l-var">sum</span> = <span class="l-var">x</span> + <span class="l-var">y</span>;<span class="iv-default-light">sum = 15</span>
+    <span class="l-keyword">let</span> <span class="l-var">result</span> = <span class="l-var">sum</span> * <span class="l-number">2</span>;<span class="iv-default-light">result = 30</span>
+    <span class="l-var">result</span>
+}</div>
+    </div>
+  </div>
+</div>
+
+<!-- AFTER -->
+<div class="section">
+  <h2>AFTER (Proposed — yellow@18 + grey1)</h2>
+  <p class="note">Gruvbox-native colors. Background: palette.yellow with hex 18 (~9%) opacity — subtle debug-like yellow tint. Foreground: palette.grey1.</p>
+  <div class="theme-row">
+    <div class="theme-box dark-box">
+      <h3>Dark</h3>
+      <div class="editor dark-editor"><span class="d-keyword">fn</span> <span class="d-fn">calculate</span>(<span class="d-var">x</span>: <span class="d-type">i32</span>, <span class="d-var">y</span>: <span class="d-type">i32</span>) -> <span class="d-type">i32</span> {
+    <span class="d-keyword">let</span> <span class="d-var">sum</span> = <span class="d-var">x</span> + <span class="d-var">y</span>;<span class="iv-proposed-dark">sum = 15</span>
+    <span class="d-keyword">let</span> <span class="d-var">result</span> = <span class="d-var">sum</span> * <span class="d-number">2</span>;<span class="iv-proposed-dark">result = 30</span>
+    <span class="d-var">result</span>
+}</div>
+    </div>
+    <div class="theme-box light-box">
+      <h3>Light</h3>
+      <div class="editor light-editor"><span class="l-keyword">fn</span> <span class="l-fn">calculate</span>(<span class="l-var">x</span>: <span class="l-type">i32</span>, <span class="l-var">y</span>: <span class="l-type">i32</span>) -> <span class="l-type">i32</span> {
+    <span class="l-keyword">let</span> <span class="l-var">sum</span> = <span class="l-var">x</span> + <span class="l-var">y</span>;<span class="iv-proposed-light">sum = 15</span>
+    <span class="l-keyword">let</span> <span class="l-var">result</span> = <span class="l-var">sum</span> * <span class="l-number">2</span>;<span class="iv-proposed-light">result = 30</span>
+    <span class="l-var">result</span>
+}</div>
+    </div>
+  </div>
+</div>
+
+<!-- Comparison with inlay hints -->
+<div class="section">
+  <h2>Reference: Inlay Hint Comparison</h2>
+  <p class="note">Existing Inlay Hints use transparent bg + bg9 foreground. Inline Values are slightly more visible but still subtle.</p>
+  <div class="theme-row">
+    <div class="theme-box dark-box">
+      <h3>Dark — Inlay Hint (existing) vs Inline Values (proposed)</h3>
+      <div class="editor dark-editor"><span class="d-keyword">fn</span> <span class="d-fn">greet</span>(<span class="d-var">name</span>: <span class="d-type">&amp;str</span>) {
+    <span class="d-keyword">let</span> <span class="d-var">msg</span><span class="inlay-dark">: String</span> = <span class="d-fn">format!</span>(<span class="d-string">"Hello {}"</span>, <span class="d-var">name</span>);<span class="iv-proposed-dark">msg = "Hello World"</span>
+    <span class="d-fn">println!</span>(<span class="d-string">"{}"</span>, <span class="d-var">msg</span>);
+}
+<span class="d-comment">// ↑ ": String" = inlay hint (bg9, transparent bg)</span>
+<span class="d-comment">// ↑ "msg = ..." = inline value (grey1, yellow@18)</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- Assessment -->
+<div class="section">
+  <h2>Assessment</h2>
+  <table>
+    <tr><th>Criterion</th><th>Evaluation</th></tr>
+    <tr><td>Issue #265: "subtle but distinguishable"</td><td>OK — yellow@9% opacity gives a debug-like tint; grey1 is dimmer than body text</td></tr>
+    <tr><td>Gruvbox palette consistency</td><td>OK — all colors sourced from the palette</td></tr>
+    <tr><td>Differentiation from Inlay Hints</td><td>OK — Inline Values have a tinted bg + brighter fg; Inlay Hints use transparent bg + darker fg</td></tr>
+    <tr><td>Light theme visibility</td><td>To verify — grey1 (#928374) may have low contrast against light bg (#fbf1c7)</td></tr>
+  </table>
+</div>
+
+</body>
+</html>
