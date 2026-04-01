@@ -8,6 +8,19 @@ module.exports = [
   },
   js.configs.recommended,
   {
+    files: ["test/**/*.js"],
+    languageOptions: {
+      sourceType: "commonjs",
+      globals: {
+        __dirname: "readonly",
+        console: "readonly",
+        module: "readonly",
+        process: "readonly",
+        require: "readonly",
+      },
+    },
+  },
+  {
     files: ["**/*.ts"],
     languageOptions: {
       parser: tsParser,

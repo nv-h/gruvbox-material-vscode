@@ -42,6 +42,9 @@ export function getDefaultSemantic(palette: Palette) {
     "intrinsic:python": `${palette.purple}`,
     "module:python": `${palette.blue}`,
     "class:python": `${palette.aqua}`,
+    "type:python": `${palette.yellow}`,
+    "selfParameter:python": `${palette.purple}`,
+    "clsParameter:python": `${palette.purple}`,
     // }}}
     // Rust {{{
     "macro:rust": `${palette.aqua}`,

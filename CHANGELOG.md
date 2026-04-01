@@ -8,6 +8,9 @@ All notable changes to the "gruvbox-material" extension will be documented in th
 - Add semantic token colors for Rust `enum` and `enumMember`. [Upstream PR #270](https://github.com/sainnhe/gruvbox-material-vscode/pull/270) — nv-h PR [#1](https://github.com/nv-h/gruvbox-material-vscode/pull/1)
 - Refactor `generateThemes.ts`: replace `Utils` class with exported functions; add `require.main` guard for testability. nv-h PR [#1](https://github.com/nv-h/gruvbox-material-vscode/pull/1)
 - Add `test` npm script using Node.js built-in test runner. nv-h PR [#1](https://github.com/nv-h/gruvbox-material-vscode/pull/1)
+- Add Python semantic token colors for `selfParameter`, `clsParameter`, and `type`. [Upstream #269](https://github.com/sainnhe/gruvbox-material-vscode/issues/269)
+- Fix `rimraf` glob failure on Windows by adding `--glob` flag (rimraf v6 compatibility).
+- Add upstream design philosophy and fork stance notes to TODO.md.
 
 ## 6.5.4
 

@@ -84,6 +84,64 @@ test("Semantic: Rust enums (colorful syntax)", () => {
   );
 });
 
+test("Semantic: Python special tokens (default syntax)", () => {
+  const data = getThemeData(baseConfig({ colorfulSyntax: false }));
+
+  assertString(
+    data.dark.semanticTokenColors["selfParameter:python"],
+    "selfParameter:python should be set (dark)",
+  );
+  assertString(
+    data.dark.semanticTokenColors["clsParameter:python"],
+    "clsParameter:python should be set (dark)",
+  );
+  assertString(
+    data.dark.semanticTokenColors["type:python"],
+    "type:python should be set (dark)",
+  );
+  assertString(
+    data.light.semanticTokenColors["selfParameter:python"],
+    "selfParameter:python should be set (light)",
+  );
+  assertString(
+    data.light.semanticTokenColors["clsParameter:python"],
+    "clsParameter:python should be set (light)",
+  );
+  assertString(
+    data.light.semanticTokenColors["type:python"],
+    "type:python should be set (light)",
+  );
+});
+
+test("Semantic: Python special tokens (colorful syntax)", () => {
+  const data = getThemeData(baseConfig({ colorfulSyntax: true }));
+
+  assertString(
+    data.dark.semanticTokenColors["selfParameter:python"],
+    "selfParameter:python should be set (dark)",
+  );
+  assertString(
+    data.dark.semanticTokenColors["clsParameter:python"],
+    "clsParameter:python should be set (dark)",
+  );
+  assertString(
+    data.dark.semanticTokenColors["type:python"],
+    "type:python should be set (dark)",
+  );
+  assertString(
+    data.light.semanticTokenColors["selfParameter:python"],
+    "selfParameter:python should be set (light)",
+  );
+  assertString(
+    data.light.semanticTokenColors["clsParameter:python"],
+    "clsParameter:python should be set (light)",
+  );
+  assertString(
+    data.light.semanticTokenColors["type:python"],
+    "type:python should be set (light)",
+  );
+});
+
 test("Workbench keys exist (material)", () => {
   const data = getThemeData(
     baseConfig({ darkWorkbench: "material", lightWorkbench: "material" }),
