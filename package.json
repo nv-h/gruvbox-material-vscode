@@ -224,7 +224,7 @@
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
-    "clean": "rimraf dist *.vsix icon.png",
+    "clean": "rimraf dist icon.png --glob \"*.vsix\"",
     "compile:ts": "tsc",
     "compile:themes": "node dist/hook/generateThemes.js",
     "compile:icon": "node dist/hook/generateIcon.js",
