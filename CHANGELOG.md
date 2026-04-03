@@ -11,6 +11,8 @@ All notable changes to the "gruvbox-material" extension will be documented in th
 - Add Python semantic token colors for `selfParameter`, `clsParameter`, and `type`. [Upstream #269](https://github.com/sainnhe/gruvbox-material-vscode/issues/269) — nv-h PR [#2](https://github.com/nv-h/gruvbox-material-vscode/pull/2)
 - Fix `rimraf` glob failure on Windows by adding `--glob` flag (rimraf v6 compatibility). — nv-h PR [#2](https://github.com/nv-h/gruvbox-material-vscode/pull/2)
 - Add upstream design philosophy and fork stance notes to TODO.md. — nv-h PR [#2](https://github.com/nv-h/gruvbox-material-vscode/pull/2)
+- Add TextMate scope colors for C/C++ enum type names (`entity.name.type.enum.c`/`.cpp`) and enum members (`variable.other.enummember.c`/`.cpp`). [Upstream #228](https://github.com/sainnhe/gruvbox-material-vscode/issues/228)
+- Simplify TypeScript/TSX semantic token overrides: remove redundant `class` and `interface` entries in the Default variant (already covered by TextMate `entity.name.type.ts`/`.tsx`), while keeping `enum` in the Default variant and `namespace` in the Colorful variant where semantic overrides are still needed.
 
 ## 6.5.4
 

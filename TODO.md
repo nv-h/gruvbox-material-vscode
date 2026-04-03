@@ -95,7 +95,7 @@ Issues and PRs from the original repository that could be addressed in this fork
 
 - **Upstream**: https://github.com/sainnhe/gruvbox-material-vscode/issues/228
 - **Upstream status**: OPEN. **sainnhe explicitly rejected** — "variables are supposed to be white", "if everything is special, nothing is special", semantic engines other than rust-analyzer are considered defective. This is the primary source of sainnhe's design philosophy on semantic highlighting.
-- **Reason**: Adopting this would contradict the core design philosophy. Fork respects upstream intent here.
+- **Fork partial fix**: Added TextMate scope colors for C/C++ `enum` type names and members in the Default variant. Generic variable/parameter bulk-highlighting remains out of scope per design philosophy. Colorful variant already covered by generic `entity.name.type.enum` TextMate rule.
 
 ### Feature Requests
 

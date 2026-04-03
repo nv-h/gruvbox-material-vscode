@@ -927,6 +927,20 @@ export function getDefaultSyntax(palette: Palette, italicComments: boolean) {
         foreground: palette.aqua,
       },
     },
+    {
+      name: "C purple",
+      scope: "entity.name.type.enum.c",
+      settings: {
+        foreground: palette.purple,
+      },
+    },
+    {
+      name: "C blue",
+      scope: "variable.other.enummember.c",
+      settings: {
+        foreground: palette.blue,
+      },
+    },
     // }}}
     // C++{{{
     {
@@ -966,6 +980,20 @@ export function getDefaultSyntax(palette: Palette, italicComments: boolean) {
       scope: "variable.other.member.cpp",
       settings: {
         foreground: palette.aqua,
+      },
+    },
+    {
+      name: "C++ purple",
+      scope: "entity.name.type.enum.cpp",
+      settings: {
+        foreground: palette.purple,
+      },
+    },
+    {
+      name: "C++ blue",
+      scope: "variable.other.enummember.cpp",
+      settings: {
+        foreground: palette.blue,
       },
     },
     // }}}
