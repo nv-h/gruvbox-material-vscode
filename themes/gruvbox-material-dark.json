@@ -9,18 +9,12 @@
     "property.defaultLibrary:javascript": "#d3869b",
     "variable.defaultLibrary:javascriptreact": "#d3869b",
     "property.defaultLibrary:javascriptreact": "#d3869b",
-    "class:typescript": "#89b482",
-    "interface:typescript": "#89b482",
     "enum:typescript": "#d3869b",
     "enumMember:typescript": "#7daea3",
-    "namespace:typescript": "#d3869b",
     "variable.defaultLibrary:typescript": "#d3869b",
     "property.defaultLibrary:typescript": "#d3869b",
-    "class:typescriptreact": "#89b482",
-    "interface:typescriptreact": "#89b482",
     "enum:typescriptreact": "#d3869b",
     "enumMember:typescriptreact": "#7daea3",
-    "namespace:typescriptreact": "#d3869b",
     "variable.defaultLibrary:typescriptreact": "#d3869b",
     "property.defaultLibrary:typescriptreact": "#d3869b",
     "intrinsic:python": "#d3869b",
@@ -1322,6 +1316,20 @@
       }
     },
     {
+      "name": "C purple",
+      "scope": "entity.name.type.enum.c",
+      "settings": {
+        "foreground": "#d3869b"
+      }
+    },
+    {
+      "name": "C blue",
+      "scope": "variable.other.enummember.c",
+      "settings": {
+        "foreground": "#7daea3"
+      }
+    },
+    {
       "name": "C++ white",
       "scope": "meta.function-call.cpp, storage.modifier.array.bracket.square.cpp, meta.function.definition.parameters.cpp, meta.body.function.definition.cpp",
       "settings": {
@@ -1354,6 +1362,20 @@
       "scope": "variable.other.member.cpp",
       "settings": {
         "foreground": "#89b482"
+      }
+    },
+    {
+      "name": "C++ purple",
+      "scope": "entity.name.type.enum.cpp",
+      "settings": {
+        "foreground": "#d3869b"
+      }
+    },
+    {
+      "name": "C++ blue",
+      "scope": "variable.other.enummember.cpp",
+      "settings": {
+        "foreground": "#7daea3"
       }
     },
     {

@@ -42,6 +42,13 @@ function assertWorkbenchKeys(theme) {
   );
 }
 
+function assertTokenColorScope(theme, scope, message) {
+  assert.ok(
+    theme.tokenColors.some((rule) => rule.scope === scope),
+    message,
+  );
+}
+
 test("Semantic: Rust enums (default syntax)", () => {
   const data = getThemeData(baseConfig({ colorfulSyntax: false }));
 
@@ -139,6 +146,93 @@ test("Semantic: Python special tokens (colorful syntax)", () => {
   assertString(
     data.light.semanticTokenColors["type:python"],
     "type:python should be set (light)",
+  );
+});
+
+test("Semantic: TypeScript enum tokens (default syntax)", () => {
+  const data = getThemeData(baseConfig({ colorfulSyntax: false }));
+
+  assertString(
+    data.dark.semanticTokenColors["enum:typescript"],
+    "enum:typescript should be set (dark)",
+  );
+  assertString(
+    data.dark.semanticTokenColors["enum:typescriptreact"],
+    "enum:typescriptreact should be set (dark)",
+  );
+  assertString(
+    data.light.semanticTokenColors["enum:typescript"],
+    "enum:typescript should be set (light)",
+  );
+  assertString(
+    data.light.semanticTokenColors["enum:typescriptreact"],
+    "enum:typescriptreact should be set (light)",
+  );
+});
+
+test("Semantic: TypeScript namespace tokens (colorful syntax)", () => {
+  const data = getThemeData(baseConfig({ colorfulSyntax: true }));
+
+  assertString(
+    data.dark.semanticTokenColors["namespace:typescript"],
+    "namespace:typescript should be set (dark)",
+  );
+  assertString(
+    data.dark.semanticTokenColors["namespace:typescriptreact"],
+    "namespace:typescriptreact should be set (dark)",
+  );
+  assertString(
+    data.light.semanticTokenColors["namespace:typescript"],
+    "namespace:typescript should be set (light)",
+  );
+  assertString(
+    data.light.semanticTokenColors["namespace:typescriptreact"],
+    "namespace:typescriptreact should be set (light)",
+  );
+});
+
+test("Syntax: C/C++ enum scopes exist (default syntax)", () => {
+  const data = getThemeData(baseConfig({ colorfulSyntax: false }));
+
+  assertTokenColorScope(
+    data.dark,
+    "entity.name.type.enum.c",
+    "entity.name.type.enum.c should be set (dark)",
+  );
+  assertTokenColorScope(
+    data.dark,
+    "variable.other.enummember.c",
+    "variable.other.enummember.c should be set (dark)",
+  );
+  assertTokenColorScope(
+    data.dark,
+    "entity.name.type.enum.cpp",
+    "entity.name.type.enum.cpp should be set (dark)",
+  );
+  assertTokenColorScope(
+    data.dark,
+    "variable.other.enummember.cpp",
+    "variable.other.enummember.cpp should be set (dark)",
+  );
+  assertTokenColorScope(
+    data.light,
+    "entity.name.type.enum.c",
+    "entity.name.type.enum.c should be set (light)",
+  );
+  assertTokenColorScope(
+    data.light,
+    "variable.other.enummember.c",
+    "variable.other.enummember.c should be set (light)",
+  );
+  assertTokenColorScope(
+    data.light,
+    "entity.name.type.enum.cpp",
+    "entity.name.type.enum.cpp should be set (light)",
+  );
+  assertTokenColorScope(
+    data.light,
+    "variable.other.enummember.cpp",
+    "variable.other.enummember.cpp should be set (light)",
   );
 });
 
