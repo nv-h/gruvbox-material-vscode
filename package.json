@@ -4,7 +4,7 @@
   "description": "Unofficial fork of Gruvbox Material for VS Code (nv-h): actively maintained with fixes and extra options.",
   "author": "nv-h (unofficial fork; upstream by sainnhe)",
   "publisher": "nv-h",
-  "version": "6.5.4",
+  "version": "7.0.0",
   "homepage": "https://github.com/nv-h/gruvbox-material-vscode",
   "bugs": {
     "url": "https://github.com/nv-h/gruvbox-material-vscode/issues"
