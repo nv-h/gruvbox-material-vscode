@@ -4,6 +4,10 @@ All notable changes to the "gruvbox-material" extension will be documented in th
 
 ## Unreleased
 
+## 7.0.1
+
+- Fix `variable` semantic token color for all languages (C/C++, Python, etc.) by adding a general `variable: fg` rule. Previously, variables appeared blue due to missing fallback color.
+
 ## 7.0.0
 
 - Add colors for debug inline values (`editor.inlineValuesBackground`, `editor.inlineValuesForeground`). [#265](https://github.com/sainnhe/gruvbox-material-vscode/issues/265) — [Preview](docs/previews/inline-values.html) — nv-h PR [#1](https://github.com/nv-h/gruvbox-material-vscode/pull/1)
