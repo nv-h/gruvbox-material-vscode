@@ -11,6 +11,7 @@ export function getColorfulSemantic(palette: Palette) {
     // General {{{
     operatorOverload: `${palette.orange}`,
     memberOperatorOverload: `${palette.orange}`,
+    variable: `${palette.fg}`,
     // }}}
     // JavaScript {{{
     "variable.defaultLibrary:javascript": `${palette.purple}`,
