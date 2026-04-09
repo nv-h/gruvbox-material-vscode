@@ -5,6 +5,7 @@
   "semanticTokenColors": {
     "operatorOverload": "#e78a4e",
     "memberOperatorOverload": "#e78a4e",
+    "variable": "#d4be98",
     "variable.defaultLibrary:javascript": "#d3869b",
     "property.defaultLibrary:javascript": "#d3869b",
     "variable.defaultLibrary:javascriptreact": "#d3869b",
